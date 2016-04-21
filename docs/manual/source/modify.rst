@@ -67,6 +67,7 @@ You perform a Modify operation as in the following example (using the default sy
 
     # define the connection
     c = Connection(s, user='user_dn', password='user_password')
+    c.bind()
 
     # perform the Modify operation
     c.modify('cn=user1,ou=users,o=company',
